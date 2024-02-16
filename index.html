@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms øvelse</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        margin: 3rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 12rem;
+    }
+
+    input,
+    textarea {
+        margin-top: .2rem;
+        margin-bottom: .8rem;
+        width: 100%;
+    }
+
+    textarea {
+        height: 6rem;
+    }
+</style>
+
+<body>
+    <h1>Forms øvelse</h1>
+    <form name="contact" method="post">
+        <label for="name">Your Name: <input type="text" id="name" name="name"></label>
+        <label for="email">Your Email: <input type="email" id="email" name="email"></label>
+        <label for="message">Message:</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </form>
+</body>
+
+</html>
